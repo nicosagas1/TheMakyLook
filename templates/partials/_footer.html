@@ -1,0 +1,21 @@
+<footer class="bg-pink-300 text-gray-800 pt-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-8 border-b border-pink-300">
+            <!-- #region info de contacto -->
+            {% include 'components/footer/infoMarca.html' %}
+            <!-- #endregion -->
+    
+            <!-- #region footer Nav -->
+            {% include 'partials/breadcrumbs/_breadFooterIndex.html' %}
+            <!-- #endregion -->
+    
+            <!-- #region redes Sociales -->
+            {% include 'components/footer/redesSociales.html' %}
+            <!-- #endregion -->
+        </div>
+    </div>
+
+    <!-- #region Créditos fuera del contenedor limitado -->
+    {% include 'components/footer/creditosSitio.html' %}  
+    <!-- #endregion -->        
+</footer>

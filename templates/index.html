@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- #region head -->
+     {% include 'partials/layout/_headIndex.html' %}
+    <!-- #endregion -->
+    <body>
+        <!-- #region header -->
+        {% include 'partials/_navbar.html' %}
+        <!-- #endregion --> 
+        
+        <!-- #region Mobile Navigation -->
+        {% include 'partials/_navbarMobile.html' %}
+        <!-- #endregion -->
+        
+        <!-- #region Hero Section -->
+        {% include 'partials/homepage/_heroIndex.html' %}
+        <!-- #endregion -->
+
+        {% if aviso %}
+        <div class="aviso">
+            <p>{{ aviso }}</p>
+        </div>
+        {% endif %}
+
+
+        <!-- #region Modal de Reserva -->
+        {% include 'partials/forms/reservarTuCita.html' %}
+        <!-- #endregion -->    
+        
+        <!-- #region Servicios -->
+        {% include 'components/servicios/contenedorServ.html' %}        
+        <!-- #endregion -->
+        
+        <!-- #region Nosotros -->
+        {% include 'components/nosotros/contNosotros.html' %}
+        <!-- #endregion -->
+
+        <!-- #region Galería -->
+        {% include 'components/galeria/contGaleria.html' %}
+        <!-- #endregion -->
+
+        <!-- #region Testimonios -->
+        {% include 'components/testimonios/testContainer.html'%}
+        <!-- #endregion -->
+
+        <!-- #region Contacto -->
+        {% include 'components/contacto/containerContacto.html' %}
+        <!-- #endregion -->
+
+        <!-- #region Footer -->
+        {% include 'partials/_footer.html' %}
+        <!-- #endregion -->
+          
+        <!-- #region Scripts -->
+        {% include 'partials/scripts/scripts.html' %}
+        <!-- #endregion -->
+
+        {% include 'partials/homepage/_wppIndex.html'%}              
+    </body>
+</html>      
